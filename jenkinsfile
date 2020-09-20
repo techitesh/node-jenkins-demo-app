@@ -11,7 +11,7 @@ pipeline {
 
         stage('deploy') {
             steps {
-                echo 'Deploying APPlication'
+                sh 'npm run start'
             }
         }
     }
