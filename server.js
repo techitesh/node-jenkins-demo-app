@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-    return res.status(200).json({ success: true, message: "Hello world" })
+    return res.status(200).json({ success: true, message: "triggered from webhook" })
 })
 
 app.listen(3000, () => {
